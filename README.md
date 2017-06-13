@@ -34,7 +34,7 @@ Javaで作成した数当てゲーム
 	|
 	|-proccess
 	|   |_ UnNumberSys.java
-	|   |_ JudgNum.java
+	|   |_ JudgeNum.java
 	|   |_ Action.java
 	|   |_ FormatError.java
 	|
@@ -55,7 +55,7 @@ Javaで作成した数当てゲーム
 		現在の数字3桁、userが入力した数字3桁、HIT,BROWの数表示
 		途中終了処理(Action.java)
 		
-	・JudgNum.java
+	・JudgeNum.java
 		コンストラクタでNumberインスタンス化
 		HIT,BROW判定
 		現在のHIT,BROWとそれに基づく数字表示
