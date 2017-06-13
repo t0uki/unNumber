@@ -1,14 +1,14 @@
 package process;
 
 public class UnNumberSys {
-	private JudgNum judg = new JudgNum();
+	private JudgeNum judge = new JudgeNum();
 	private Action ac = new Action();
 	private int[] userIn = new int[3];
 	private int turn;
 
 	public void play() {
-		judg.printNum();
-		// judg.debugNum(); // Debugプリント
+		judge.printNum();
+		// judge.debugNum(); // Debugプリント
 		re: while (turn < 20) {
 			turn++;
 			// 全部Hitならクリア
@@ -32,12 +32,12 @@ public class UnNumberSys {
 			}
 			System.out.println("-----------------");
 			// 判定呼び出し
-			judg.answerNum(userIn);
+			judge.answerNum(userIn);
 			// 現在のNum出力
-			judg.printNum();
-			// judg.debugNum(); //Debugプリント
-			System.out.print("HIT : " + judg.getHit() + " | ");
-			System.out.println("BROW : " + judg.getBrow());
+			judge.printNum();
+			// judge.debugNum(); //Debugプリント
+			System.out.print("HIT : " + judge.getHit() + " | ");
+			System.out.println("BROW : " + judge.getBrow());
 			System.out.println("-----------------");
 		}
 		if (turn == 20)
