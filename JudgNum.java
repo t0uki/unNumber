@@ -2,14 +2,14 @@ package process;
 
 import state.Number;
 
-public class JudgNum {
+public class JudgeNum {
 	private int hit;
 	private int brow;
 	private Number num;
 	private String[] printNum = new String[3];
 
 	// Number作成
-	JudgNum() {
+	JudgeNum() {
 		Number num = new Number();
 		this.num = num;
 	}
